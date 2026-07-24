@@ -198,8 +198,24 @@ nltk.download("omw-1.4")
 MODEL_PATH = "models/best_phishing_model.pkl"
 VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
 
+
+import os
+
+st.write("Loading model...")
+
+if not os.path.exists(MODEL_PATH):
+    st.error(f"Model file not found: {MODEL_PATH}")
+    st.stop()
+
+if not os.path.exists(VECTORIZER_PATH):
+    st.error(f"Vectorizer file not found: {VECTORIZER_PATH}")
+    st.stop()
+
 model = joblib.load(MODEL_PATH)
 tfidf = joblib.load(VECTORIZER_PATH)
+
+st.success("Model loaded successfully")
+
 
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
