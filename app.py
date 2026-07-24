@@ -190,10 +190,27 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-nltk.download("punkt")
-nltk.download("stopwords")
-nltk.download("wordnet")
-nltk.download("omw-1.4")
+import nltk
+import streamlit as st
+
+@st.cache_resource
+def download_nltk_resources():
+
+    resources = [
+        "punkt",
+        "punkt_tab",
+        "stopwords",
+        "wordnet",
+        "omw-1.4"
+    ]
+
+    for resource in resources:
+        try:
+            nltk.download(resource)
+        except Exception as e:
+            st.warning(f"NLTK download issue: {e}")
+
+download_nltk_resources()
 
 MODEL_PATH = "models/best_phishing_model.pkl"
 VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
@@ -236,7 +253,7 @@ def clean_text(text):
 
     text = re.sub(r"\s+", " ", text).strip()
 
-    words = word_tokenize(text)
+    words = word_tokenize(text, language="english")
 
     words = [w for w in words if w not in stop_words]
 
