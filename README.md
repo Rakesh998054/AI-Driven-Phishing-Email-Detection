@@ -1,23 +1,8 @@
 # 🛡️ AI-Driven Phishing Email Detection Using NLP and Machine Learning
-<p align="center">
 
-<a href="https://ai-driven-phishing-email-detection-khqkaep8lwtbr88hhhxvmd.streamlit.app">
-  <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-success?style=for-the-badge" alt="Live Demo">
-</a>
+## Deployed in Streamlit app : https://ai-driven-phishing--email-detection.streamlit.app/ . 
 
-<a href="https://github.com/ashutoshsharma-08/AI-Driven-Phishing-Email-Detection">
-  <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
-</a>
 
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
-  <img src="https://img.shields.io/badge/Framework-Streamlit-red.svg">
-  <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange.svg">
-  <img src="https://img.shields.io/badge/NLP-TF--IDF-green.svg">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
-</p>
 
 ## 📌 Overview
 
@@ -93,57 +78,9 @@ Among all models, **Logistic Regression** achieved the best performance and was 
 
 ---
 
-## 📂 Project Structure
 
-```text
-AI_Driven_Phishing_Email_Detection
-│
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── LICENSE
-│
-├── dataset/
-│   └── phishing_email.csv (Not included in GitHub)
-│
-├── models/
-│   ├── best_phishing_model.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── notebook/
-│   └── AI_Driven_Phishing_Email_Detection.ipynb
-│
-└── screenshots/
-```
 
-## ⚙️ Installation
 
-### Clone the repository
-
-```bash
-git clone https://github.com/ashutoshsharma-08/AI-Driven-Phishing-Email-Detection.git
-```
-
-### Move into the project folder
-
-```bash
-cd AI-Driven-Phishing-Email-Detection
-```
-
-### Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the Streamlit application
-
-```bash
-streamlit run app.py
-```
-
----
 
 ## 💻 Application Workflow
 
@@ -170,19 +107,17 @@ streamlit run app.py
 
 ## 👨‍💻 Developer
 
-**Ashutosh Sharma**
+**Rakesh**
 
-B.Tech Computer Science Engineering (AI & DS)
+B.Tech (ISE)
 
-Government Hydro Engineering College, Bandla, Bilaspur (H.P.)
+NMAM institute of technology , Nitte 
 
-GitHub: https://github.com/ashutoshsharma-08
+GitHub: https://github.com/rakesh998054 .
 
 ---
 
-## ⭐ Support
 
-If you found this project useful, consider giving this repository a ⭐ on GitHub.
 
 ---
 
