@@ -1,6 +1,6 @@
 # 🛡️ AI-Driven Phishing Email Detection Using NLP and Machine Learning
 
-## Deployed in Streamlit app : https://ai-driven-phishing--email-detection.streamlit.app/ . 
+## Deployed in Streamlit app : https://ai-driven-phishing--email-detection.streamlit.app/ . 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
 
 
