@@ -195,9 +195,11 @@ nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download("omw-1.4")
 
+MODEL_PATH = "models/best_phishing_model.pkl"
+VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
 
-model = joblib.load("best_phishing_model.pkl")
-tfidf = joblib.load("tfidf_vectorizer.pkl")
+model = joblib.load(MODEL_PATH)
+tfidf = joblib.load(VECTORIZER_PATH)
 
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
